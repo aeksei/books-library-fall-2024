@@ -1,5 +1,41 @@
 [
     {
+        "model": "books.category",
+        "pk": 1,
+        "fields": {
+            "name": "Программирование"
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 2,
+        "fields": {
+            "name": "Веб-разработка"
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 3,
+        "fields": {
+            "name": "Теория и алгоритмы"
+        }
+    },
+      {
+        "model": "books.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Популярное"
+        }
+    },
+    {
+        "model": "books.tag",
+        "pk": 2,
+        "fields": {
+            "name": "Бестселлер"
+        }
+    },
+
+    {
       "model": "books.book",
       "pk": 1,
       "fields": {
@@ -9,7 +45,10 @@
         "book_type": "PB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "programmirovanie-na-python"
+        "slug": "programmirovanie-na-python",
+        "rating": 5.7,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -22,7 +61,10 @@
         "book_type": "HC",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "osnovy-algoritmov"
+        "slug": "osnovy-algoritmov",
+        "rating": 7.8,
+        "category": 3,
+        "tags": []
       }
     },
     {
@@ -35,7 +77,10 @@
         "book_type": "EB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "javascript-polnoe-rukovodstvo"
+        "slug": "javascript-polnoe-rukovodstvo",
+        "rating": 7.5,
+        "category": 2,
+        "tags": []
       }
     },
     {
@@ -48,7 +93,10 @@
         "book_type": "PB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "html-i-css-dizayn-i-razrabotka-veb-saytov"
+        "slug": "html-i-css-dizayn-i-razrabotka-veb-saytov",
+        "rating": 8.1,
+        "category": 2,
+        "tags": []
       }
     },
     {
@@ -61,7 +109,10 @@
         "book_type": "PB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "django-dlya-nachinayushchikh"
+        "slug": "django-dlya-nachinayushchikh",
+        "rating": 9.1,
+        "category": 2,
+        "tags": [1]
       }
     },
     {
@@ -74,7 +125,10 @@
         "book_type": "EB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "sql-i-bazy-dannykh"
+        "slug": "sql-i-bazy-dannykh",
+        "rating": 9.3,
+        "category": 1,
+        "tags": [1, 2]
       }
     },
     {
@@ -87,7 +141,10 @@
         "book_type": "HC",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "arkhitektura-kompyutera"
+        "slug": "arkhitektura-kompyutera",
+        "rating": 6.1,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -100,7 +157,10 @@
         "book_type": "EB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "python-dlya-analiza-dannykh"
+        "slug": "python-dlya-analiza-dannykh",
+        "rating": 6.7,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -113,7 +173,10 @@
         "book_type": "PB",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "git-i-github"
+        "slug": "git-i-github",
+        "rating": 7.8,
+        "category": 1,
+        "tags": [2]
       }
     },
     {
@@ -126,7 +189,10 @@
         "book_type": "HC",
         "created_at": "2024-03-12T12:00:00Z",
         "updated_at": "2024-03-12T12:00:00Z",
-        "slug": "java-polnoe-rukovodstvo"
+        "slug": "java-polnoe-rukovodstvo",
+        "rating": 5.3,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -139,7 +205,10 @@
         "book_type": "PB",
         "created_at": "2024-03-15T09:00:00Z",
         "updated_at": "2024-03-15T09:00:00Z",
-        "slug": "python-dlya-nachinayushchikh"
+        "slug": "python-dlya-nachinayushchikh",
+        "rating": 6.9,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -152,7 +221,10 @@
         "book_type": "PB",
         "created_at": "2024-03-16T10:00:00Z",
         "updated_at": "2024-03-16T10:00:00Z",
-        "slug": "javascript-the-good-parts"
+        "slug": "javascript-the-good-parts",
+        "rating": 5.3,
+        "category": 2,
+        "tags": []
       }
     },
     {
@@ -165,7 +237,10 @@
         "book_type": "HC",
         "created_at": "2024-03-17T11:00:00Z",
         "updated_at": "2024-03-17T11:00:00Z",
-        "slug": "c-plus-plus-primer"
+        "slug": "c-plus-plus-primer",
+        "rating": 7.1,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -178,7 +253,10 @@
         "book_type": "PB",
         "created_at": "2024-03-18T12:00:00Z",
         "updated_at": "2024-03-18T12:00:00Z",
-        "slug": "html-css-design-and-build-websites"
+        "slug": "html-css-design-and-build-websites",
+        "rating": 6.3,
+        "category": 2,
+        "tags": []
       }
     },
     {
@@ -191,7 +269,10 @@
         "book_type": "PB",
         "created_at": "2024-03-19T13:00:00Z",
         "updated_at": "2024-03-19T13:00:00Z",
-        "slug": "algorithms-explained-and-illustrated"
+        "slug": "algorithms-explained-and-illustrated",
+        "rating": 9.3,
+        "category": 3,
+        "tags": [2]
       }
     },
     {
@@ -204,7 +285,10 @@
         "book_type": "PB",
         "created_at": "2024-03-20T14:00:00Z",
         "updated_at": "2024-03-20T14:00:00Z",
-        "slug": "the-pragmatic-programmer-your-journey-to-mastery"
+        "slug": "the-pragmatic-programmer-your-journey-to-mastery",
+        "rating": 6.8,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -217,7 +301,10 @@
         "book_type": "HC",
         "created_at": "2024-03-21T15:00:00Z",
         "updated_at": "2024-03-21T15:00:00Z",
-        "slug": "clean-code-a-handbook-of-agile-software-craftsmanship"
+        "slug": "clean-code-a-handbook-of-agile-software-craftsmanship",
+        "rating": 9.4,
+        "category": 1,
+        "tags": [2]
       }
     },
     {
@@ -230,7 +317,10 @@
         "book_type": "HC",
         "created_at": "2024-03-22T16:00:00Z",
         "updated_at": "2024-03-22T16:00:00Z",
-        "slug": "deep-learning"
+        "slug": "deep-learning",
+        "rating": 8.8,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -243,7 +333,10 @@
         "book_type": "PB",
         "created_at": "2024-03-23T17:00:00Z",
         "updated_at": "2024-03-23T17:00:00Z",
-        "slug": "design-patterns-elements-of-reusable-object-oriented-software"
+        "slug": "design-patterns-elements-of-reusable-object-oriented-software",
+        "rating": 7.7,
+        "category": 1,
+        "tags": []
       }
     },
     {
@@ -256,7 +349,10 @@
         "book_type": "HC",
         "created_at": "2024-03-24T18:00:00Z",
         "updated_at": "2024-03-24T18:00:00Z",
-        "slug": "introduction-to-algorithms"
+        "slug": "introduction-to-algorithms",
+        "rating": 7.8,
+        "category": 3,
+        "tags": []
       }
     }
   ]
