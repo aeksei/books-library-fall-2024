@@ -46,7 +46,6 @@ class ListCreateBookAPIViewTestCase(APITestCase):
             msg="Список книг должен быть пустым."
         )
 
-    @unittest.expectedFailure
     def test_create_book(self):
         url = reverse("book_api:book-list")
 
