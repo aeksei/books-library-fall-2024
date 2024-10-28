@@ -12,7 +12,11 @@ class ListCreateBookAPIView(APIView):
     """По /books/ получаем список объектов или доабвляем новый."""
     def get(self, request: Request, *args, **kwargs):
         """Список книг"""
-        queryset = Book.objects.all()
+        queryset = (
+            Book.objects.all()
+            .prefetch_related("tags")
+            .select_related("category")
+        )
 
         serializer = BookSerializer(
             instance=queryset,
