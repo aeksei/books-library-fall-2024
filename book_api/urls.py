@@ -2,6 +2,8 @@ from django.urls import path
 
 from book_api import views
 
+app_name = "book_api"
+
 urlpatterns = [
     path(
         "books/",
